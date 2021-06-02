@@ -14,4 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
         min.style.transform = `rotate(${minutes}deg)`;
         hr.style.transform = `rotate(${hours+(minutes/12)}deg)`;
     });
-});
+}); 
