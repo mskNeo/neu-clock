@@ -1,6 +1,6 @@
-const sec = document.querySelector(".sec"),
-    min = document.querySelector(".min"),
-    hr = document.querySelector(".hr");
+const s = document.querySelector(".sec"),
+    m = document.querySelector(".min"),
+    h = document.querySelector(".hr");
 
 document.addEventListener("DOMContentLoaded", function() {
     setInterval(function() {
@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
         let minutes = time.getMinutes() * 6;
         let hours = time.getHours() * 30;
 
-        sec.style.transform = `rotate(${seconds}deg)`;
-        min.style.transform = `rotate(${minutes}deg)`;
-        hr.style.transform = `rotate(${hours+(minutes/12)}deg)`;
+        s.style.transform = `rotate(${seconds}deg)`;
+        m.style.transform = `rotate(${minutes}deg)`;
+        h.style.transform = `rotate(${hours+(minutes/12)}deg)`;
     });
 });
 
